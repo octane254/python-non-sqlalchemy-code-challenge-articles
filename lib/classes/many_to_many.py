@@ -1,5 +1,5 @@
 
-class Author:
+class Author():
     def __init__(self, name):
         self._name = None
         self.name = name  # set once; later changes are ignored
@@ -38,7 +38,7 @@ class Author:
         return list({m.category for m in self.magazines()})
 
 
-class Magazine:
+class Magazine():
     def __init__(self, name, category):
         self._name = None
         self._category = None
@@ -90,7 +90,7 @@ class Magazine:
         return heavy if heavy else None
 
 
-class Article:
+class Article():
     # single source of truth for relationships
     all = []
 
